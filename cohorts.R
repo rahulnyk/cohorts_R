@@ -5,7 +5,7 @@ library("gridExtra", lib.loc="/usr/local/lib/R/3.4/site-library")
 library("reshape2", lib.loc="/usr/local/lib/R/3.4/site-library")
 library("RColorBrewer", lib.loc="/usr/local/lib/R/3.4/site-library")
 library("colorRamps", lib.loc="/usr/local/lib/R/3.4/site-library")
-setwd("~/Miracas")
+setwd("./")
 ### Dataframe
 regenerate_dataframes = T
 if (regenerate_dataframes) {
