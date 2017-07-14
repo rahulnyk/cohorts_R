@@ -59,9 +59,8 @@ p <- p + theme(panel.grid.major = element_blank(), panel.grid.minor = element_bl
 p <- p + xlab("Orders by new users")
 print(p)
 
-## Monthly retention rate
 # p2 <- ggplot()
-# 
+# ## Average Monthly retention rate
 # p2 <- p2 + geom_ribbon(data = df_plot_envelope, aes(x = Month_after, ymax = maxpc, ymin = minpc, group = 1), fill = "grey95")
 # p2 <- p2 + geom_path(data = df_plot_average, aes(x = Month_after, y = av, group = 1), color="orange", size=2)
 # p2 <- p2 + geom_point(data = df_plot_average, aes(x = Month_after, y = av, group = 1), color="orange", shape=16, size=4)
@@ -71,13 +70,8 @@ print(p)
 # p2 <- p2 + theme(axis.text.x = element_text(angle = 20, hjust = 1))
 
 
-# p2 <- p2 + geom_path(data = df_plot_envelope, aes(x = Month_after, y = maxpc, group = 1), color="wheat2")
-# p2 <- p2 + geom_path(data = df_plot_envelope, aes(x = Month_after, y = minpc, group = 1), color="wheat2")
-## Monthly retention groups
+## Cohorts Monthly retention groups
 # p2 <- p2 + geom_point(data = df_plot_reduced, aes(x = Month_after, y = Pc_value, group = Month_after, color = Month_after), size=1, shape=16)
 # p2 <- p2 + geom_path(data = df_plot_reduced, aes(x = Month_after, y = Pc_value, group = Month_after, color = Month_after), size=0.2)
 # p2 <- p2 + ylim(0, 20)
-
-## envelop
-
 # print(p2)
